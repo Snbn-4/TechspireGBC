@@ -89,6 +89,32 @@ body {
 .section.active {
     display: block;
 }
+.social-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 25rem;
+}
+
+.social-icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    transition: all 1s ease;
+    border: 1px solid #f2dbda;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.social-icons a:hover{
+    color: white;
+    background-color: red;
+}
 
 .footer {
     background:#b2251d;
