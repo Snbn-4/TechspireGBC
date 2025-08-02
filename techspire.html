@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSc CSIT Program</title>
+    <link rel="stylesheet" href="techspire.css">
+</head>
+<body>
+    <div class="top-header">
+        <img src="Logo.png" alt="Techspire Logo">
+        <nav>
+            <ul>
+                <li>Overview</li>
+                <li>About Us</li>
+                <li>Programs</li>
+                <li>Gallery</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="first-image">
+        <img src="techspireimg.png" alt="Techspire Front Image">
+    </div>
+
+    <div class="second-image">
+        <img src="background.png" alt="Second Image">
+    </div>
+
+    <div class="hero-text">
+        BSc CSIT Program
+    </div>
+<div class="content">
+        <div class="buttons">
+            <button onclick="changeText('Bachelor of Science in Computer Science and Information Technology (BSc CSIT) is a four-year academic program designed to provide students with in-depth knowledge of computer science and information technology. The course structure is divided into eight semesters with theoretical and practical components.')">Overview</button>
+            <button onclick="changeText('Applicants must have completed +2 Science or equivalent with minimum C grade in each subject. Students must also pass the entrance examination conducted by the Institute of Science and Technology, Tribhuvan University.')">Eligibility</button>
+            <button onclick="changeText('During the final year, students are required to submit a dissertation or final project report that addresses real-world IT problems or innovations. This is a mandatory requirement for graduation.')">Dissertation</button>
+            <button onclick="changeText('Graduates of BSc CSIT can pursue careers in software development, system analysis, networking, data science, cybersecurity, AI, and various other IT fields. They can also opt for higher education like MSc CSIT, MCA, or related fields.')">Career Opportunities</button>
+            <button onclick="changeText('The BSc CSIT curriculum includes subjects like Programming, Data Structures, Algorithms, Computer Architecture, Operating Systems, Networking, Database Management, AI, and elective courses to specialize in advanced technologies.')">Curriculum</button>
+        </div>
+
+        <div id="display-text" class="section active">
+            <p>Bachelor of Science in Computer Science and Information Technology (BSc CSIT) is a four-year academic program designed to provide students with in-depth knowledge of computer science and information technology. The course structure is divided into eight semesters with theoretical and practical components.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Help</li>
+        </ul>
+    </div>
+
+    <script>
+        function changeText(text) {
+            document.getElementById('display-text').innerHTML = '<p>' + text + '</p>';
+        }
+    </script>
+</body>
+</html>
